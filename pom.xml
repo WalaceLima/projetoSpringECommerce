@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>war</packaging> <!-- formato do pacote -->
@@ -7,11 +8,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.2</version>
-		<relativePath/>
+		<relativePath />
 	</parent>
 	<groupId>br.com.cotiinformatica</groupId>
 	<artifactId>projetoSpringECommerce</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>projetoSpringECommerce</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -25,7 +26,7 @@
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -36,7 +37,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -54,7 +55,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- Dependencias do Spring Boot para web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -72,7 +73,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<!-- dependencias para o Swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -103,13 +104,31 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 		</dependency>
-		
+
 		<!-- dependencia para o MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-		
+
+		<!-- Dependencias para autenticação com JWT -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<!-- seção onde configuramos o deploy -->
