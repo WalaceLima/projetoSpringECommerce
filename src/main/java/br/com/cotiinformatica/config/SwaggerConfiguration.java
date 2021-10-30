@@ -33,10 +33,10 @@ public class SwaggerConfiguration {
 	      "ECommerce - Loja de produtos", 
 	      "Sistema desenvolvido em JAVA SpringBoot API / Hibernate JPA.", 
 	      "Versão 1.0 - 22/07/2021", 
-	      "http://www.cotiinformatica.com.br", 
-	      new Contact("COTI Informática", "http://www.cotiinformatica.com.br", 
-	    		  	"contato@cotiinformatica.com.br"), 
-	      			"License of API", "http://www.cotiinformatica.com.br", 
+	      "http://www.walacelima.com", 
+	      new Contact("Tradicao Brasill System", "http://www.walacelima.com", 
+	    		  	"contato@walacelima.com"), 
+	      			"License of API", "http://www.walacelima.com", 
 	      			Collections.emptyList());
 	}	
 }
